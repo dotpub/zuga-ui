@@ -54,6 +54,7 @@ img[lazy=loading] {
   line-height: 40px;
   text-align: center;
   text-orientation: upright;
+  -webkit-text-orientation: upright;
   z-index: 200;
 }
 a {

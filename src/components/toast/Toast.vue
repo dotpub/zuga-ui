@@ -89,6 +89,7 @@ export default {
   text-align: center;
   writing-mode: vertical-lr;
   text-orientation: sideways;
+  -webkit-text-orientation: sideways;
 }
 .zui-toast-pop-enter, .zui-toast-pop-leave-active {
   opacity: 0

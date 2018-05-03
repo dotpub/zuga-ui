@@ -4,24 +4,24 @@
 
     <zui-check-list
       class="page-part"
-      title=" "
+      title=" "
       v-model="value1"
       :options="options1">
     </zui-check-list>
 
     <div>
-      <zui-cell title="">{{ value1 }}</zui-cell>
+      <zui-cell title="">{{ value1 }}</zui-cell>
     </div>
 
     <zui-check-list
       class="page-part"
-      title="  "
+      title="  "
       v-model="value2"
       :options="options2">
     </zui-check-list>
 
     <div>
-      <zui-cell title="">{{ value2 }}</zui-cell>
+      <zui-cell title="">{{ value2 }}</zui-cell>
     </div>
 
     <zui-check-list
@@ -33,7 +33,7 @@
     </zui-check-list>
 
     <div>
-      <zui-cell title="">{{ value3 }}</zui-cell>
+      <zui-cell title="">{{ value3 }}</zui-cell>
     </div>
 
     <zui-check-list
@@ -54,32 +54,32 @@
       return {
         value1: [],
         value2: ['B'],
-        value3: [' B'],
+        value3: [' B'],
         value4: []
       };
     },
 
     created() {
-      this.options1 = [' A', ' B', ' C'];
-      this.options3 = [' A', ' B', ' C', 'D'];
-      this.options4 = [' A', ' B', ' C', 'D'];
+      this.options1 = [' A', ' B', ' C'];
+      this.options3 = [' A', ' B', ' C', 'D'];
+      this.options4 = [' A', ' B', ' C', 'D'];
       this.options2 = [
         {
-          label: ' A',
+          label: ' A',
           value: 'A',
           disabled: true
         },
         {
-          label: ' B',
+          label: ' B',
           value: 'B',
           disabled: true
         },
         {
-          label: ' C',
+          label: ' C',
           value: 'C'
         },
         {
-          label: ' D',
+          label: ' D',
           value: 'D'
         }
       ];
