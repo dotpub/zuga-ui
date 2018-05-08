@@ -69,13 +69,6 @@ export default {
 
     componentName: 'picker',
 
-    data() {
-      return {
-        values: [],
-        slotCount: 0
-      }
-    },
-
     props: {
       slots: {
         type: Array
@@ -178,14 +171,16 @@ export default {
     },
 
     computed: {
-      values() {
-        var slots = this.slots || [];
-        var values = [];
-        slots.forEach(function(slot) {
-          if (!slot.divider) values.push(slot.value);
-        });
+      values: {
+        get() {
+          var slots = this.slots || [];
+          var values = [];
+          slots.forEach(function(slot) {
+            if (!slot.divider) values.push(slot.value);
+          });
 
-        return values;
+          return values;
+        }
       },
       slotCount() {
         var slots = this.slots || [];

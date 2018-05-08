@@ -1,6 +1,6 @@
 {
   "name": "zuga-ui",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "mongolian mobile UI elements for Vue2.0 (Based mint-ui https://github.com/ElemeFE/mint-ui).",
   "author": "chaoge <372145101@qq.com>",
   "license": "MIT",
