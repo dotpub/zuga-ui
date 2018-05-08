@@ -69,6 +69,13 @@ export default {
 
     componentName: 'picker',
 
+    data() {
+      return {
+        values: [],
+        slotCount: 0
+      }
+    },
+
     props: {
       slots: {
         type: Array
